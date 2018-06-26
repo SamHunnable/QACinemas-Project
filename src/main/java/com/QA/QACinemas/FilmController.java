@@ -49,7 +49,7 @@ public class FilmController {
 		return "\"message\" : \"Film edited\"";
 	}
 	
-	@DeleteMapping("films/remove")
+	@DeleteMapping("films/remove/{id}")
 	public String removeFilm(@PathVariable long id) {
 		filmRepository.deleteById(id);
 		return "\"message\" : \"Film deleted\"";		
