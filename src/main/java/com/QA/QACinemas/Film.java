@@ -1,4 +1,4 @@
-package com.QA.entity;
+package com.QA.QACinemas;
 
 import javax.persistence.Entity;
 
@@ -26,6 +26,15 @@ public class Film {
 	private @NonNull String title;
 	private @NonNull String genre;
 	private @NonNull String classification;
+	
+
+	public Film(String title, String genre, String classification) {
+		this.title = title;
+		this.genre = genre;
+		this.classification = classification;
+	}
+	
+	public Film() {}
 	
 	public String getTitle() {
 		return title;
